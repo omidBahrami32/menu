@@ -11,6 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Item } from "./Interfaces";
+import { toFarsiNumber } from "@/utils/tools";
 
 const SearchModal = () => {
   const [searchInput, setSearch] = useState<string>("");
@@ -82,7 +83,7 @@ const SearchModal = () => {
                 {results.length > 0 &&
                   results.map((result) => (
                     <Link
-                      href={`/menu?typeId=${result.type_id}?categoryId=${result.category}`}
+                      href={`/menu?typeId=${result.type_id}&categoryId=${result.category}`}
                       key={result.id}
                       className="flex h-40 w-full cursor-pointer select-none items-center gap-x-3 rounded-2xl bg-white p-4"
                     >
@@ -126,17 +127,5 @@ const SearchModal = () => {
   );
 };
 
-// function to convert numbers to persian digits
-function toFarsiNumber(number: number) {
-  const farsiDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
-  const farsiNumber = number
-    .toString()
-    .split("")
-    .map((x) => farsiDigits[x])
-    .join("");
-  if (number < 1000) {
-    return farsiNumber;
-  }
-  return farsiNumber[0] + "/" + farsiNumber.slice(1);
-}
+
 export default SearchModal;

@@ -40,7 +40,7 @@ const CollapsibleMenu = ({ data }: { data: Type[] }) => {
                       >
                         {item.categories.map((category) => (
                           <Link
-                            href={`/menu?categoryId=${category.id}?typeId=${item.id}`}
+                            href={`/menu?categoryId=${category.id}&typeId=${item.id}`}
                             key={category.id}
                             className="mx-auto flex aspect-square h-28 flex-col items-center justify-center gap-2 rounded-[1.2rem] bg-primary-forground p-2"
                           >
