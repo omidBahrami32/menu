@@ -9,16 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "primary": "#ccd5da",
-        "secondary": "#648496",
+        primary: "#ccd5da",
+        secondary: "#648496",
         "primary-forground": "#537484",
-        "secondary-foreground": "#65808e"
+        "secondary-foreground": "#65808e",
+        brown: "#959ea3",
+        foreground: "#e5e5e5",
       },
       blur: {
-        sm: '6px',
+        sm: "6px",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light"],
+  },
 };
 export default config;
