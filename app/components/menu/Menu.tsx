@@ -1,5 +1,5 @@
 import React from "react";
-import { CategoryWithItems, Item } from "./Interfaces";
+import { CategoryWithItems, Item } from "../Interfaces";
 import MenuItem from "./MenuItem";
 import { axiosInstance } from "@/services/api";
 import SelectModal from "./SelectModal";

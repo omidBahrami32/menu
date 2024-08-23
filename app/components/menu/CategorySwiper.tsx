@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import "swiper/css";
 import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
-import { Type } from "./Interfaces";
+import { Type } from "../Interfaces";
 
 const CategorySwiper = ({
   data,

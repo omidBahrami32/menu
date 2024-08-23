@@ -1,10 +1,10 @@
 import { axiosInstance } from "@/services/api";
-import BrandBox from "../components/BrandBox";
-import CartIcon from "../components/CartIcon";
-import CartModal from "../components/CartModal";
-import CategorySwiper from "../components/CategorySwiper";
+import BrandBox from "../components/menu/BrandBox";
+import CartIcon from "../components/menu/CartIcon";
+import CartModal from "../components/menu/CartModal";
+import CategorySwiper from "../components/menu/CategorySwiper";
 import { CategoryWithItems, Type } from "../components/Interfaces";
-import Menu from "../components/Menu";
+import Menu from "../components/menu/Menu";
 
 interface Props {
   searchParams: {

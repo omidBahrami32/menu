@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useRecoilState } from "recoil";
-import { Item } from "./Interfaces";
+import { Item } from "../Interfaces";
 
 const MenuItem = ({ data }: { data: Item }) => {
   const router = useRouter();

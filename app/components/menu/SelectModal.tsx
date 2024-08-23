@@ -1,7 +1,7 @@
 "use client";
 import { AnimatePresence, motion, easeInOut } from "framer-motion";
 import React, { useState } from "react";
-import { Item, Option } from "./Interfaces";
+import { Item, Option } from "../Interfaces";
 import { useRouter } from "next/navigation";
 import { toFarsiNumber } from "@/utils/tools";
 import { useRecoilState } from "recoil";

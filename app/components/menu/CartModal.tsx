@@ -5,7 +5,7 @@ import { AnimatePresence, easeOut, motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useRecoilState } from "recoil";
-import { CartItem } from "./Interfaces";
+import { CartItem } from "../Interfaces";
 
 const CartModal = () => {
   const router = useRouter();

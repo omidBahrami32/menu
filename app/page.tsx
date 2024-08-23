@@ -3,8 +3,8 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
-import CollapsibleMenu from "./components/CollapsibleMenu";
-import Header from "./components/Header";
+import CollapsibleMenu from "./components/home/CollapsibleMenu"; 
+import Header from "./components/home/Header";
 import { Type } from "./components/Interfaces";
 
 

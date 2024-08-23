@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Image as ImageType } from "./Interfaces";
+import { Image as ImageType } from "../Interfaces";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";

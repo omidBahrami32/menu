@@ -10,7 +10,7 @@ import { AnimatePresence, easeOut, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Item } from "./Interfaces";
+import { Item } from "../Interfaces";
 import { toFarsiNumber } from "@/utils/tools";
 
 const SearchModal = () => {

@@ -9,7 +9,7 @@ import {
 import { AnimatePresence, easeOut, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { Type } from "./Interfaces";
+import { Type } from "../Interfaces";
 
 const CollapsibleMenu = ({ data }: { data: Type[] }) => {
   return (

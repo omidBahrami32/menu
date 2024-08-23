@@ -1,7 +1,7 @@
 "use client";
 import { AnimatePresence, motion, easeInOut } from "framer-motion";
 import React from "react";
-import { Item } from "./Interfaces";
+import { Item } from "../Interfaces";
 import AlbumSlider from "./AlbumSlider";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useRecoilState } from "recoil";

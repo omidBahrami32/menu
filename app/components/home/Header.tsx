@@ -5,7 +5,6 @@ import LanguageSelector from "./LanguageSelector";
 import Link from "next/link";
 import SearchModal from "./SearchModal";
 
-// TODO: fix overflow issue and add english
 
 const Header = ({ show }: { show: boolean }) => {
   return (
