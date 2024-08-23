@@ -25,7 +25,7 @@ const LanguageSelector = () => {
           فارسی (IR)
         </MenuButton>
         <MenuItems
-          className="absolute right-4 z-50 mt-2 flex w-[92.7vw] origin-top-right scale-100 transform items-center justify-center rounded-b-[2rem] bg-secondary text-white opacity-100"
+          className="absolute right-4 z-50 mt-2 flex lg:w-[92.7vw] origin-top-right scale-100 transform items-center justify-center rounded-b-[2rem] bg-secondary text-white opacity-100"
           anchor="bottom"
         >
           <MenuItem>

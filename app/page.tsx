@@ -29,7 +29,7 @@ export default async function Home({ searchParams: { show } }: Props) {
       <div className="flex h-screen flex-col">
         <div className="fixed left-0 top-0 z-20 w-full">
           <Header show={show} />
-          <div className="mx-auto mt-8 rounded-full border border-primary bg-primary/50 px-4 py-2 text-center text-sm lg:w-1/6">
+          <div className="mx-auto mt-8 rounded-full border border-primary bg-primary/50 px-4 py-2 text-center text-sm lg:w-1/6 sm:w-1/3">
             <Link href="#">ورود به مینی وبسایت برند شما</Link>
           </div>
         </div>

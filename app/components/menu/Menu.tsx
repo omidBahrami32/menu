@@ -34,7 +34,7 @@ const Menu = async ({ data, productId, productSId, removePId }: Props) => {
             </div>
             <div className="h-px grow bg-secondary-foreground opacity-15"></div>
           </div>
-          <div className="grid grid-cols-1 gap-x-3 gap-y-6 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-x-3 gap-y-6 lg:grid-cols-3 sm:grid-cols-2">
             {category.items.map((item) => (
               <MenuItem key={item.id} data={item} />
             ))}

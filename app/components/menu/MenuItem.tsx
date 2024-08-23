@@ -57,7 +57,7 @@ const MenuItem = ({ data }: { data: Item }) => {
     <div
       key={data.id}
       id={`item-${data.id}`}
-      className={`relative flex max-h-[10rem] grow flex-row overflow-visible ${data.choice_text || data.option_text ? "rounded-b-none" : "rounded-b-xl"} rounded-t-xl bg-foreground px-2 after:rounded-b-xl ${count > 0 && "bg-foreground/10 bg-gradient-to-l from-secondary via-secondary/30 to-secondary/10"} ${(data.choice_text || data.option_text) && "mb-8 rounded-b-none"}`}
+      className={`relative flex h-[10rem] grow flex-row overflow-visible ${data.choice_text || data.option_text ? "rounded-b-none" : "rounded-b-xl"} rounded-t-xl bg-foreground px-2 after:rounded-b-xl ${count > 0 && "bg-foreground/10 bg-gradient-to-l from-secondary via-secondary/30 to-secondary/10"} ${(data.choice_text || data.option_text) && "mb-8 rounded-b-none"}`}
     >
       {/* not available */}
       {data.count == 0 && (
