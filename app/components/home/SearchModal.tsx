@@ -50,7 +50,7 @@ const SearchModal = () => {
           <div className="h-screen w-full rounded-md bg-primary-forground/20 px-2 py-6 lg:w-2/6">
             <div className="flex flex-col gap-3 text-center">
               {/* search box */}
-              <div className="flex h-14 items-center justify-between rounded-full border-4 border-secondary px-2">
+              <div className="sticky flex h-14 items-center justify-between rounded-full border-4 border-secondary px-2">
                 <div className="p-2">
                   <FontAwesomeIcon
                     icon={faMagnifyingGlass}
@@ -74,7 +74,7 @@ const SearchModal = () => {
                 </Link>
               </div>
               {/* results */}
-              <div className="max-h-screen flex flex-col items-center gap-4 overflow-y-scroll">
+              <div className="no-scrollbar flex h-[86vh] flex-col items-center gap-4 overflow-y-scroll">
                 {results.length == 0 && (
                   <div className="flex items-center justify-center text-center">
                     آیتمی یافت نشد.
@@ -85,7 +85,7 @@ const SearchModal = () => {
                     <Link
                       href={`/menu?typeId=${result.type_id}&categoryId=${result.category}`}
                       key={result.id}
-                      className="flex h-40 w-full cursor-pointer select-none items-center gap-x-3 rounded-2xl bg-white p-4"
+                      className="relative flex h-40 w-full cursor-pointer select-none items-center gap-x-3 rounded-2xl bg-white p-4"
                     >
                       <div className="flex items-center">
                         <Image
@@ -126,6 +126,5 @@ const SearchModal = () => {
     </AnimatePresence>
   );
 };
-
 
 export default SearchModal;
